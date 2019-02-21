@@ -1,0 +1,80 @@
+@media (max-width:991px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+@media (min-width: 991px){
+  .hide-on-desktop {
+    display: none;
+  }
+}
+.banner {
+  .green-nav-bar {
+    width: 100%;
+    height: 25px;
+    background-color: #aac35e;
+  }
+  .header-row {
+    padding: 7px 0px 5px 0px;
+    .nav-primary {
+      padding: 60px 15px 0px 15px;
+      #menu-item-32 {
+        padding: 5px 25px 5px 5px;
+        margin: 0px 10px 0px 10px;
+        background-image: url(https://peartreecatering.com/wp-content/themes/pear/assets/images/arrow-green-icon-down.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 10px;
+      }
+      #menu-item-36, #menu-item-38, #menu-item-39, #menu-item-40 {
+        padding: 5px 5px 5px 5px;
+        margin: 0px 10px 0px 10px;
+      }
+      a {
+        color: #7a7b7d;
+        text-decoration: none;
+      }
+    }
+  }
+  .mobile-header-row {
+    background-color: #aac35e;
+    height: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .mobile-menu, .mobile-social {
+      height: 100%;
+    }
+    .mobile-menu {
+      text-align: right;
+    }
+  }
+  .logo-col {
+    img {
+      margin-top: 10px;
+      height: 100px;
+      margin-bottom: 7px;
+    }
+  }
+  svg {
+    margin-right: 7px;
+  }
+  .services {
+    background-color: #aac35e;
+    ul {
+      display: block;
+      li {
+        border: 1px solid #aac35e;
+        border-left-color: white;
+        padding-left: 4px;
+        margin-bottom: 5px;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+    #services-menu {
+      padding: 25px;
+    }
+  }
+}
