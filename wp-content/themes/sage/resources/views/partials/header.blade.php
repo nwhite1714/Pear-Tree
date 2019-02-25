@@ -10,7 +10,7 @@
         <div class="header-col">
           <!-- Nav -->
           @if (has_nav_menu('primary_navigation'))
-          {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav d-flex justify-content-center']) !!}
+          {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav d-flex justify-content-center', 'menu_id' => 'services']) !!}
           @endif
         </div>
       </div>
@@ -26,6 +26,24 @@
       </div>
     </div>
   </div>
+  <div class="container-fluid services" id="menu-services" style="display: none">
+      <div class="row">
+        <div class="col-xs-12 col-lg-12">
+          <div class="row">
+              <div id="services-menu" class="col-6 col-lg-3">
+                @if (has_nav_menu('services'))
+                {!! wp_nav_menu(['theme_location' => 'services', 'menu_class' => 'nav']) !!}
+                @endif
+              </div>
+              <div id="services-menu" class="col-6 col-lg-3">
+                @if (has_nav_menu('services_2'))
+                {!! wp_nav_menu(['theme_location' => 'services_2', 'menu_class' => 'nav']) !!}
+                @endif
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
   <div class="container-fluid hide-on-desktop">
     <div class="row mobile-header-row">
       <div class="col-7 mobile-social">
@@ -40,24 +58,6 @@
     <div class="row mobile-logo-row justify-content-center">
       <div class="logo-col">
         <a class="mobile-brand" href="{{ home_url('/') }}"><img src="{{ the_field('brand') }}"></a>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid services">
-    <div class="row">
-      <div class="col-xs-12 col-lg-12">
-        <div class="row">
-            <div id="services-menu" class="col-6 col-lg-2">
-                @if (has_nav_menu('services'))
-                {!! wp_nav_menu(['theme_location' => 'services', 'menu_class' => 'nav']) !!}
-                @endif
-              </div>
-              <div id="services-menu" class="col-6 col-lg-2">
-                @if (has_nav_menu('services_2'))
-                {!! wp_nav_menu(['theme_location' => 'services_2', 'menu_class' => 'nav']) !!}
-                @endif
-              </div>
-        </div>
       </div>
     </div>
   </div>

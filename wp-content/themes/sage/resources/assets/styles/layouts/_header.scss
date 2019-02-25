@@ -18,13 +18,31 @@
     padding: 7px 0px 5px 0px;
     .nav-primary {
       padding: 60px 15px 0px 15px;
-      #menu-item-32 {
+      .dropdown {
         padding: 5px 25px 5px 5px;
         margin: 0px 10px 0px 10px;
+        background-size: 10px;
+      }
+      // .no-children {
+      //   background-image: url(https://peartreecatering.com/wp-content/themes/pear/assets/images/arrow-green-icon-down.png);
+      //   background-repeat: no-repeat;
+      //   background-position: right;
+      // }
+      // .has-children {
+      // background-image: url(https://peartreecatering.com/wp-content/themes/pear/assets/images/arrow-green-icon-up.png);
+      // background-repeat: no-repeat;
+      // background-position: right;
+      // }
+      .inactive {
         background-image: url(https://peartreecatering.com/wp-content/themes/pear/assets/images/arrow-green-icon-down.png);
         background-repeat: no-repeat;
         background-position: right;
-        background-size: 10px;
+      }
+      .active {
+        background-image: url(https://peartreecatering.com/wp-content/themes/pear/assets/images/arrow-green-icon-up.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        
       }
       #menu-item-36, #menu-item-38, #menu-item-39, #menu-item-40 {
         padding: 5px 5px 5px 5px;

@@ -1,6 +1,5 @@
 @include('partials.head')
 @include('partials.header')
-@include('partials.content-hero')
-@include ('partials.content-projectfeatures')
-@include ('partials.content-signup')
+@include('partials.hero')
+@include('partials.about')
 @php get_footer(); @endphp
