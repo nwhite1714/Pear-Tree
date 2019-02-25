@@ -1,7 +1,10 @@
-.loremipsum {
+.about-section {
     height: 350px;
     padding: 50px;
     .about-title {
+        font-size: 40px;
+    }
+    p {
         color: #505050;
     }
 }
