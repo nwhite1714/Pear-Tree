@@ -1,7 +1,6 @@
 export default {
   init() {
     // JavaScript to be fired on all pages
-
     $('.dropdown').on('click', function(event) {
       $('#menu-services').slideToggle();
       event.preventDefault();
@@ -14,6 +13,9 @@ export default {
       //   $(this).removeClass('no-children');
       //   $(this).addClass('has-children');
       // }
+    });
+    $('#hamburger').on('click', function() {
+      $('.mobile-container').slideToggle();
     });
   },
   finalize() {

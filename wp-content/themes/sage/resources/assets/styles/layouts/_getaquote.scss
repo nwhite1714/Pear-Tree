@@ -1,0 +1,52 @@
+// <-- Media Queries -->
+// Font size becomes responsive on smaller screen sizes
+@media (min-width:0) and (max-width:755px) {
+    .getaquote-text {
+    font-size: 7vw;
+    // line-height: relative;
+    }
+}
+@media (min-width: 756px) and (max-width: 1050px) {
+    .getaquote-text {
+        font-size: 3vw;
+    }
+}
+
+// Align text to center on smaller screens
+@media (min-width:0) and (max-width:695px) {
+    .getaquote-text {
+    text-align: center;
+    }
+}
+
+// Actual CSS
+.getaquote {
+    background-image: url("https://peartreecatering.com/wp-content/uploads/2017/06/Pear-Tree_home2.jpg");
+    height: auto;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    .quotebox {
+        max-width: 1200px;
+        height: auto;
+        .getaquotebox {
+            height: auto;
+            text-align: right;
+            padding: 70px 0px 70px 0px;
+            float: right;
+            color: white;
+            .getaquote-text {
+                text-shadow: 0px 0px 9px black;
+            }
+            .getaquote-btn {
+                width: 100%;
+                height: 50px;
+                border-radius: 13px;
+                color: #505050;
+                border: none;
+                background-color: rgba(242, 241, 239, 0.8);
+                font-size: 20px;
+            }
+        }
+    }
+}

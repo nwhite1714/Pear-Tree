@@ -1,13 +1,15 @@
+// <-- Media Queries -->
 @media (max-width:991px) {
   .hide-on-mobile {
     display: none;
   }
 }
-@media (min-width: 991px){
+@media (min-width: 992px){
   .hide-on-desktop {
     display: none;
   }
 }
+// Actual CSS
 .banner {
   .green-nav-bar {
     width: 100%;
@@ -23,16 +25,6 @@
         margin: 0px 10px 0px 10px;
         background-size: 10px;
       }
-      // .no-children {
-      //   background-image: url(https://peartreecatering.com/wp-content/themes/pear/assets/images/arrow-green-icon-down.png);
-      //   background-repeat: no-repeat;
-      //   background-position: right;
-      // }
-      // .has-children {
-      // background-image: url(https://peartreecatering.com/wp-content/themes/pear/assets/images/arrow-green-icon-up.png);
-      // background-repeat: no-repeat;
-      // background-position: right;
-      // }
       .inactive {
         background-image: url(https://peartreecatering.com/wp-content/themes/pear/assets/images/arrow-green-icon-down.png);
         background-repeat: no-repeat;
@@ -42,7 +34,6 @@
         background-image: url(https://peartreecatering.com/wp-content/themes/pear/assets/images/arrow-green-icon-up.png);
         background-repeat: no-repeat;
         background-position: right;
-        
       }
       #menu-item-36, #menu-item-38, #menu-item-39, #menu-item-40 {
         padding: 5px 5px 5px 5px;
@@ -55,18 +46,74 @@
     }
   }
   .mobile-header-row {
-    background-color: #aac35e;
+    background-color: rgb(170, 195, 94);
     height: 60px;
     padding-top: 15px;
     padding-bottom: 15px;
+    .mobile-social {
+      
+    }
     .mobile-menu, .mobile-social {
       height: 100%;
     }
+    .mobile-container {
+      padding:0px;
+    }
     .mobile-menu {
       text-align: right;
+      #hamburger {
+        width: 33px;
+        svg {
+          display: inline;
+        }
+      }
     }
   }
-  .logo-col {
+  .mobile-logo-row {
+    height: 94px;
+    z-index: 2;
+    .logo-col {
+      padding-top: 10px;
+      padding-bottom: 7px;
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .collapse {
+    display: none;
+  }
+    .mobile-container {
+      height: 94px;
+      // background-color: rgba(180, 180, 180, 0.45);
+      background-color: rgba(73, 99, 37, 0.65);
+      position: absolute;
+      .mobile-nav-row {
+        padding: 5px 10px 10px 10px;
+        z-index: 1;
+        ul {
+          display: block;
+          li {
+            padding-left: 4px;
+            margin-bottom: 4px;
+            border: 1px solid rgba(242, 241, 239, 0);
+            border-left-color: white;
+            a {
+              color: white;
+              text-decoration: none;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .social {
+    width: 35px;
+    display: inline-block;
+  }
+  .logo-col-desktop {
     img {
       margin-top: 10px;
       height: 100px;
@@ -95,4 +142,3 @@
       padding: 25px;
     }
   }
-}
