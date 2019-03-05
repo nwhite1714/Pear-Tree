@@ -2,22 +2,19 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-12">
-            <div class="owl-nav">
-                <button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button>
-            </div>
-            <div class="owl-carousel">
+        <div class="col-12 d-flex justify-content-center">
+            <div class="owl-carousel owl-drag owl-theme">
                 @if(have_rows('carousel_items'))
                     @while(have_rows('carousel_items'))
-                        @php the_row() @endphp
-                        <div>
-                            <img src="{{ the_sub_field('image') }}">
+                        @php the_row(); @endphp
+                        @php $link = get_sub_field('link'); @endphp
+                        <div class="tile-item">
+                            <a class="item-field d-flex justify-content-center" style="background-image: url('{{ the_sub_field('image') }}');" href="{{ $link['url'] }}" target = "{{ $link['target'] }}" >
+                                <p class="item-header">{{ $link['title'] }}</p>
+                            </a>
                         </div>
                     @endwhile
                 @endif
-            </div>
-            <div class="owl-nav">
-                <button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button>
             </div>
         </div>
     </div>
@@ -26,14 +23,14 @@
 <script>jQuery('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
-    nav:false,
+    nav:true,
     dots: false,
     responsive:{
         0:{
-            items:3
+            items:1
         },
         600:{
-            items:3
+            items:2
         },
         1000:{
             items:3

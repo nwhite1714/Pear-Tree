@@ -1,12 +1,75 @@
 // <-- Media Queries -->
+@media (min-width:0) and (max-width:500px) {
+    .owl-carousel {
+        width: 190px;
+    }
+}
 
 //Actual CSS
 .owl-carousel {
-    background-color: purple;
     height: 250px;
+    .owl-prev {
+        width: 45px;
+        height: 250px;
+        position: absolute;
+        top: 0%;
+        left: -60px;
+        display: block !important;
+        background-image: url("http://127.0.0.1/new-site/wp-content/uploads/2019/03/carousel-arrow-left.png") !important;
+        background-repeat: no-repeat !important;
+        background-position-y: center !important;
+        span {
+            display: none;
+        }
+    }
+    .owl-next {
+        width: 45px;
+        height: 250px;
+        position: absolute;
+        top: 0%;
+        right: -60px;
+        display: block !important;
+        background-image: url("http://127.0.0.1/new-site/wp-content/uploads/2019/03/carousel-arrow-right.png") !important;
+        background-repeat: no-repeat !important;
+        background-position-y: center !important;
+        span {
+            display: none;
+        }
+    }
     .owl-item {
-        background-color: #15ff00;
         color: red;
         height: 250px;
+        .item-field {
+            height: 240px;
+            width: auto;
+            background-position: center;
+            background-size: auto 100%;
+            padding-top: 100px;
+            margin: 10px;
+            text-decoration: none;
+            &:hover {
+                margin: 0px;
+                transition: all 0.5s ease-in-out;
+            }
+            .item-header {
+                color: rgb(104, 104, 104);
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                width: 100%;
+                height: 44px;
+                padding: 10px;
+                border: 0px transparent black;
+            }
+            .item-header:link {
+                color: rgb(104, 104, 104);
+                text-decoration: none;
+            }
+            .item-header:hover {
+                transition: all 0.5s ease-in-out;
+                text-decoration: none;
+                color: #aac35e;
+                background-color: rgb(255, 255, 255);
+            }
+        }
     }
 }
